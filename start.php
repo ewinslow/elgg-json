@@ -12,7 +12,7 @@ if (!function_exists('json_encode')) {
 }
 
 if (!function_exists('json_decode')) {
-	function json_decode($value, $type) {
-		return Zend_Json::decode($value, $type);
+	function json_decode($value) {
+		return Zend_Json::decode($value);
 	}
 }
